@@ -1,5 +1,5 @@
-FROM amazoncorretto:1.8-alpine-jdk
+FROM amazoncorretto:18.0.1.1-alpine-jdk
 
-COPY target/vj-0.0.1-SNAPSHOT.jar vj-0.0.1-SNAPSHOT.jar 
+COPY target/mgb-0.0.1-SNAPSHOT.jar mgb-0.0.1-SNAPSHOT.jar 
 
-ENTRYPOINT ["java", "-jar","/vj-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar","/mgb-0.0.1-SNAPSHOT.jar"]
